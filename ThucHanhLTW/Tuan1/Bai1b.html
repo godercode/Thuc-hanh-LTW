@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Khảo sát</title>
+        <style>
+            /* CSS để căn giữa bảng */
+            .table_1 {
+                margin: 0 auto; /* Đặt giữa theo chiều ngang */
+            }
+
+            /* Thêm một chút padding cho đẹp mắt */
+            body {
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">KHẢO SÁT Ý KIẾN</h1>
+            <p style="text-align: center;">V/V: Các kỹ năng mềm đối với sinh viên để thành công trong công việc</p>
+            <hr width="600px">
+        </header>
+        <main>
+            <b>Theo bạn kỹ năng nào là cần thiết nhất đối với bạn trong các kỹ năng sau:</b>
+            <form>
+                <fieldset>
+                    <legend>Kỹ năng mềm cần có</legend>
+                    <table class="table_1">
+                        <tr>
+                            <td>
+                                <div>
+                                    <input type="checkbox" value="datmuctieu"name="datmuctieu">Kỹ năng đặt mục tiêu<br>
+                                    <input type="checkbox" value="sangtao" name="sangtao">Sáng tạo trong công việc<br>
+                                    <input type="checkbox" value="langnghe" name="langnghe">Biết lắng nghe và học tập những lời phê bình<br>
+                                    <input type="checkbox" value="giaotiep" name="giaotiep">Giao tiếp hiệu quả<br>
+                                    <input type="checkbox" value="tutin" name="tutin">Tự tin, năng động và biết lôi kéo người khác<br>
+                                </div>
+                            </td>
+                            <td width="150px"></td>
+                            <td>
+                                <div>
+                                    <input type="checkbox" value="datmuctieu" name="datmuctieu">Kỹ năng làm việc đồng đội<br>
+                                    <input type="checkbox" value="lanhdaobanthan" name="lanhdaobanthan">Kỹ năng khám phá và lãnh đạo bản thân<br>
+                                    <input type="checkbox" value="quanlythoigian" name="quanlythoigian">Kỹ năng tổ chức công việc và quản lý thời gian<br>
+                                    <input type="checkbox" value="raquyetdinh" name="raquyetdinh">Kỹ năng ra quyết định<br>
+                                    <input type="checkbox" value="giaiquyetvande" name="giaiquyetvande">Kỹ năng giải quyết vấn đề<br>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Ý kiến khác:
+                                <textarea name="ykienkhac" rows="3" cols="80"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+            <br>
+            <form>
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    <table>
+                        <tr>
+                            <td>Họ và tên:</td>
+                            <td width="100px"></td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Độ tuổi</td>
+                            <td width="100px"></td>
+                            <td>
+                                <select type="combox" name="dotuoi">                              
+                                    <option value="18-24" name="18-24">18-24</option>
+                                    <option value="25-40" name="25-40">25-40</option>
+                                    <option value="other" name="other">other</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Giới tính:</td>
+                            <td width="100px"></td>
+                            <td>
+                                <input type="radio" name="nam" value="nam">Nam
+                                <input type="radio" name="nu" value="nu">Nữ
+                            </td>
+                            <td width="500px"></td>
+                            <td rowspan="5">
+                                <img width="150x" src="https://seapublication.files.wordpress.com/2014/01/increasing-success-photo.jpg?w=640" alt="success" title="anh_success">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <!--direction= right to left-->
+                <section dir="rtl">
+                    <input type="submit" value="Gửi khảo sát">
+                    <input type="reset" value="Làm lại">
+                </section>
+            </form>
+        </main>
+        <footer>
+            <p style="text-align: center;"><b>Cảm ơn bạn đã tham gia khảo sát!</b></p>
+        </footer>
+    </body>
+</html>
