@@ -4,14 +4,15 @@
         <meta charset="utf-8">
         <title>Khảo sát</title>
         <style>
-            /* CSS để căn giữa bảng */
             .table_1 {
-                margin: 0 auto; /* Đặt giữa theo chiều ngang */
-            }
-
-            /* Thêm một chút padding cho đẹp mắt */
+                margin: 0 auto; 
+            } 
             body {
                 padding: 20px;
+            }
+            form {
+                width: 90%;
+                margin: 0 auto;
             }
         </style>
     </head>
@@ -22,12 +23,13 @@
             <hr width="600px">
         </header>
         <main>
-            <b>Theo bạn kỹ năng nào là cần thiết nhất đối với bạn trong các kỹ năng sau:</b>
+            <p style="margin-left: 80px;"><b>Theo bạn kỹ năng nào là cần thiết nhất đối với bạn trong các kỹ năng sau:</b></p>
             <form>
                 <fieldset>
                     <legend>Kỹ năng mềm cần có</legend>
-                    <table class="table_1">
+                    <table>
                         <tr>
+                            <td width="100px"></td>
                             <td>
                                 <div>
                                     <input type="checkbox" value="datmuctieu"name="datmuctieu">Kỹ năng đặt mục tiêu<br>
@@ -49,6 +51,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <td width="100px"></td>
                             <td colspan="3">Ý kiến khác:
                                 <textarea name="ykienkhac" rows="3" cols="80"></textarea>
                             </td>
@@ -66,6 +69,10 @@
                             <td width="100px"></td>
                             <td>
                                 <input type="text">
+                            </td>
+                            <td width="320px"></td>
+                            <td rowspan="3">
+                                <img width="150x" src="https://seapublication.files.wordpress.com/2014/01/increasing-success-photo.jpg?w=640" alt="success" title="anh_success">
                             </td>
                         </tr>
                         <tr>
@@ -86,10 +93,6 @@
                                 <input type="radio" name="nam" value="nam">Nam
                                 <input type="radio" name="nu" value="nu">Nữ
                             </td>
-                            <td width="500px"></td>
-                            <td rowspan="5">
-                                <img width="150x" src="https://seapublication.files.wordpress.com/2014/01/increasing-success-photo.jpg?w=640" alt="success" title="anh_success">
-                            </td>
                         </tr>
                     </table>
                 </fieldset>
@@ -101,7 +104,7 @@
             </form>
         </main>
         <footer>
-            <p style="text-align: center;"><b>Cảm ơn bạn đã tham gia khảo sát!</b></p>
+            <p style="text-align: center;margin-top: 20px;"><b>Cảm ơn bạn đã tham gia khảo sát!</b></p>
         </footer>
     </body>
 </html>
