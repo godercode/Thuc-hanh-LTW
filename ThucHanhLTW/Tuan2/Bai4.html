@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Books online</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+          width: 100%;
+        }
+
+        .book-list .col-3 {
+          width: 45%;
+        }
+        .sub-menu-1,
+        .sub-menu-2,
+        .sub-menu-3,
+        .sub-menu-4 {
+          z-index: 1;
+        }
+        .search {
+          display: flex;
+          margin: auto;
+          justify-content: center;
+        }
+
+        .search h4 {
+          margin: 0 10px 10px 10px;
+        }
+
+        .search input {
+          min-width: 200px;
+        }
+
+        #menu-1 {
+          background: white;
+        }
+
+        #menu-1 ul li {
+          width: 100%;
+          background: linear-gradient(
+            -45deg,
+            rgba(254, 102, 148, 0.85) 55%,
+            rgba(254, 177, 183, 0.85)
+          );
+        }
+
+        #menu-1 ul li:hover .sub-menu {
+          width: 100%;
+        }
+        .clearfix-1::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        .list-item {
+          padding: 25px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="tieude">
+        <h1>Books online</h1>
+      </div>
+      <nav id="menu-1">
+        <ul>
+          <li>
+            <a target="_blank" href="#">Sách giáo khoa</a>
+            <ul class="sub-menu sub-menu-1">
+              <li><a target="_blank" href="#">Lớp 6</a></li>
+              <br />
+              <li><a target="_blank" href="#">Lớp 7</a></li>
+              <br />
+              <li><a target="_blank" href="#">Lớp 8</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a target="_blank" href="#">Sách tham khảo</a>
+            <ul class="sub-menu sub-menu-2">
+              <li><a target="_blank" href="#">Toán</a></li>
+              <br />
+              <li><a target="_blank" href="#">Văn</a></li>
+              <br />
+              <li><a target="_blank" href="#">Anh</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a target="_blank" href="#">Tạp chí chuyên ngành</a>
+            <ul class="sub-menu sub-menu-3">
+              <li><a target="_blank" href="#">CNTT</a></li>
+              <br />
+              <li><a target="_blank" href="#">Sinh Hóa</a></li>
+              <br />
+              <li><a target="_blank" href="#">Tâm Lý Học</a></li>
+              <br />
+            </ul>
+          </li>
+          <li>
+            <a target="_blank" href="#">Truyện thiếu nhi</a>
+            <ul class="sub-menu sub-menu-4">
+              <li><a target="_blank" href="#">Truyện Tranh</a></li>
+              <br />
+              <li><a target="_blank" href="#">Truyện Cổ Tich</a></li>
+              <br />
+              <li><a target="_blank" href="#">Truyện Ngụ Ngôn</a></li>
+              <br />
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="row">
+      <article class="col-12">
+        <section class="col-3 search">
+          <h4>Tìm kiếm</h4>
+          <input type="text" />
+          <button type="submit">Tìm</button>
+        </section>
+        <section class="col-9 book-list">
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Toán</p>
+            <img src="/Pictures/toan6.jpg" />
+          </div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Ngữ văn</p>
+            <img src="/Pictures/nguvan6.png" />
+          </div>
+          <div class="clearfix-1"></div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Toán-STK</p>
+            <img src="/Pictures/Toan6-stk.jpg" />
+          </div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Ngữ văn-STK</p>
+            <img src="/Pictures/nguvan-stk.jpg" />
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Toán</p>
+            <img src="/Pictures/toan6.jpg" />
+          </div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Ngữ văn</p>
+            <img src="/Pictures/nguvan6.png" />
+          </div>
+          <div class="clearfix-1"></div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Toán-STK</p>
+            <img src="/Pictures/Toan6-stk.jpg" />
+          </div>
+          <div class="col-3 border-item">
+            <p style="font-weight: bold; text-align: left">Ngữ văn-STK</p>
+            <img src="/Pictures/nguvan-stk.jpg" />
+          </div>
+        </section>
+      </article>
+    </main>
+    <div class="clearfix"></div>
+    <footer>
+      <div id="footer">
+        <a target="_blank" href="https://www.facebook.com/tan.phamdinh.526"
+          >Design by TanThanh</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>

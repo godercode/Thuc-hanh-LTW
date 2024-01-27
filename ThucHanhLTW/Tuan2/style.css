@@ -1,0 +1,301 @@
+/*-----------------CSS toan bo web-------------------*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 5px;
+}
+.container {
+  width: 100%;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header {
+  padding: 15px;
+  background: linear-gradient(
+    45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+}
+/*------------------------Bai3A CSS----------------------------*/
+#header {
+  text-align: center;
+}
+#menu ul {
+  background: linear-gradient(
+    -45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+  list-style-type: none;
+  text-align: center;
+  position: relative;
+}
+#menu ul li {
+  display: inline-table;
+  height: 40px;
+  line-height: 40px;
+}
+#menu ul li a {
+  display: block;
+  margin-left: 10px;
+  color: black;
+}
+#menu ul li a:hover {
+  background-color: #fb5891;
+  color: beige;
+}
+#menu .sub_menu {
+  display: none;
+  position: absolute;
+}
+#menu ul li:hover .sub_menu {
+  display: block;
+}
+#menu ul li > .sub_menu li {
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+#images {
+  margin-top: 100px;
+  width: 40%;
+  float: left;
+  padding: 1em;
+}
+#maincontent {
+  margin: 30px 0 50px 0;
+  background-color: rgba(254, 220, 219, 0.2);
+  width: 60%;
+  float: right;
+  padding: 1em;
+}
+details:hover {
+  color: #ed0a5a;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------Bai3B-----------------------------------------------------*/
+
+h1 {
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+h1:hover,
+h1:active {
+  color: rgb(246, 6, 6);
+}
+.main-content h2 a {
+  color: black;
+}
+.main-content h2 a:hover {
+  color: #fb5891;
+}
+
+.menu {
+  width: 50%;
+}
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.menu ul li {
+  padding: 8px;
+  margin: 8px 0;
+  background: linear-gradient(
+    -45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+}
+.menu ul li a {
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+
+.main-content {
+  width: 100%;
+  margin: 0 20px;
+}
+.main-content h2 {
+  font-size: 150%;
+  margin: 15px 0;
+  text-transform: uppercase;
+}
+.title {
+  color: #fe6694;
+  margin: 15px 0;
+}
+.pr-content div {
+  direction: rtl;
+}
+.detail {
+  direction: rtl;
+  color: rgb(204, 202, 202);
+  transition: all 0.2s;
+}
+
+.image {
+  width: 50%;
+  margin-top: 8px;
+}
+.image img {
+  margin-top: 5px;
+  border: 10px solid #feb1b7;
+}
+#img-1 {
+  width: 100%;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------Bai 4--------------------------------------------------*/
+.tieude {
+  padding: 15px;
+  background: linear-gradient(
+    45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+}
+h1 {
+  color: white;
+}
+#menu-1 {
+  height: 60px;
+  background: linear-gradient(
+    -45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+}
+#menu-1 ul {
+  list-style-type: none;
+  text-align: center;
+  float: right;
+}
+#menu-1 ul li {
+  display: inline-table;
+  line-height: 60px;
+  width: 250px;
+  height: 60px;
+  position: relative;
+}
+#menu-1 ul li a {
+  display: block;
+
+  text-transform: uppercase;
+}
+#menu-1 ul li a:hover,
+.menu ul li a:active {
+  background-color: #fe6694;
+}
+#menu-1 ul li > .sub-menu {
+  display: none;
+  position: absolute;
+}
+#menu-1 ul li:hover .sub-menu {
+  display: block;
+  background-color: black;
+}
+.search {
+  margin-top: 20px;
+}
+.search h4 {
+  margin: 10px 5px;
+}
+.search input {
+  margin: 10px 5px;
+}
+input:hover,
+input:focus {
+  background: linear-gradient(
+    45deg,
+    rgba(254, 102, 148, 0.5) 55%,
+    rgba(254, 177, 183, 0.5)
+  );
+}
+img {
+  max-width: 90%;
+  height: auto;
+  margin: 5%;
+}
+.border-item {
+  border: 3px solid #fe6694;
+  margin: 10px;
+}
+.book-list div {
+  width: 23%;
+  box-sizing: border-box;
+}
+#footer {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: linear-gradient(
+    -45deg,
+    rgba(254, 102, 148, 0.85) 55%,
+    rgba(254, 177, 183, 0.85)
+  );
+  text-align: center;
+  color: white;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*-------------GRID W3S-----------------*/
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  float: left;
+}
+.book-list p {
+  text-align: center;
+}
+/*----------------------------------------------------------------------------------------------------------------------*/
