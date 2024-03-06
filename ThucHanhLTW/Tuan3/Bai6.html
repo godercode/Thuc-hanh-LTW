@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        border: solid 1px black;
+        padding: 20px;
+        width: 300px;
+        margin: 100px auto;
+      }
+      p {
+        margin-left: 30px;
+      }
+      input[type="text"],
+      input[type="date"] {
+        width: 150px;
+      }
+      input[type="text"] {
+        margin-left: 30px;
+      }
+      input[type="button"] {
+        padding: 5px;
+        margin-right: 10px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <p style="display: inline-block">Ngày sinh</p>
+      <input type="date" id="ngaySinh" />
+      <br />
+      <p style="display: inline-block">Cung</p>
+      <input type="text" id="Cung" readonly />
+      <br />
+      <input
+        style="margin-left: 110px"
+        type="button"
+        value="Xem"
+        onclick="Check()"
+      />
+      <input type="button" value="Xóa" onclick="Xoa()" />
+    </div>
+    <script src="Bai6.js"></script>
+  </body>
+</html>

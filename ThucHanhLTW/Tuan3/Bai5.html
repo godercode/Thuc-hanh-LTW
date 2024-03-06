@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        border: solid 1px black;
+        padding: 20px;
+        width: 400px;
+        margin: 100px auto;
+      }
+      input[type="text"] {
+        width: 300px;
+        margin-left: 28px;
+      }
+      select {
+        width: 250px;
+      }
+      input[type="button"] {
+        padding: 5px;
+        margin-right: 10px;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <p style="display: inline-block">Chuỗi</p>
+      <input type="text" id="inputTxt" />
+      <br />
+      <p style="display: inline-block">Danh sách</p>
+      <select id="selectBox" onchange="Selected()"></select>
+      <br />
+      <input
+        style="margin-left: 250px"
+        type="button"
+        value="Thực hiện"
+        onclick="tachChuoi()"
+      />
+      <input type="button" value="Hủy" onclick="Xoa()" />
+    </div>
+    <script src="Bai5.js"></script>
+  </body>
+</html>
